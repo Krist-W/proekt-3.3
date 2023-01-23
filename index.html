@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bookshelf</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="reset.css" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <link rel="stylesheet" href="icons\css\all.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    </head>    
+                    <body>
+                        <div class="title-site">Книжная полка</div>
+                            
+                                <!-- Модальное окно для добавления книги -->
+                                <div class="add-modal" id="add-modal">
+                                    <div class="add-modal-content">
+                                    <div class="title-modal">Введите данные книги</div>
+                                  
+                                        <input id="title" class="input text" placeholder="Название книги"/>
+                                        <input id="authors" class="input text" placeholder="Автор книги"/>
+                                        <input id="year" class="input text" placeholder="Год издания книги"/>
+                                        <input id="image" class="input text" placeholder="Ссылка на изображение"/>
+                                        <button class="button" id="add-book-button">Сохранить</button>
+                                        <button class="button" id="close-modal-button">Закрыть</button>
+                                    </div>
+                                    </div>
+                                
+                                    <!-- Модальное окно для изменения книги -->
+                                    <div class="add-modal" id="update-modal">
+                                        <div class="add-modal-content">
+                                        <div class="title-modal">Измените данные книги</div>
+                                        <p class="text">
+                                            <input id="updateTitle" class="input text" placeholder="Название книги"/>
+                                            <input id="updateAuthors" class="input text" placeholder="Автор книги"/>
+                                            <input id="updateYear" class="input text" placeholder="Год издания книги"/>
+                                            <input id="updateImage" class="input text" placeholder="Ссылка на изображение"/>
+                                        </p>
+                                            <button class="button" id="update-book-button">Изменить</button>
+                                            <button class="button" id="close-update-modal-button">Закрыть</button>
+                                            
+                                        </div>
+                                        </div>
+                
+                                    <div>
+                                        <button class="open-modal-button" id="open-modal-button" >
+                                        Добавить книгу
+                                    </button>
+                                </div>
+                                    
+                                
+                              <!--  
+                                форма сверху для добавления книг
+                               <div id="container-form"> 
+                               <div class="form">
+                               <div>
+                                    <p class="text">Название книги</p>
+                                    <input id="title" class="input" />
+                                </div>
+                                <div>
+                                    <p class="text">Автор книги</p>
+                                    <input id="authors" class="input"/>
+                                </div>
+                                <div>
+                                    <p class="text">Год издания книги</p>
+                                    <input id="year" class="input" />
+                                </div>
+                                <div>
+                                    <p class="text">Ссылка на изображение</p>
+                                    <input id="image" class="input" />
+                                </div>
+                                </div>
+                                <div class="button-save">
+                                <button class="button" onclick="addBook()" id="hide">
+                                    Сохранить
+                                </button>
+                                </div>
+                               </div> -->
+                             
+                                <div id="container2" class="container2">
+                                    <div id="book" class="book">
+
+                                      
+                                      </div>
+                                </div>
+                                
+        
+                                    </div>
+            
+                        <script src="script.js"></script>
+                    </body>
+                </html>
+        

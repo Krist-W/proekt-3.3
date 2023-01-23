@@ -1,0 +1,269 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #faf5f5;
+}
+
+:root {
+    --primary-color: #1297c0;
+    --primary-color2: #dbe8ec;
+    --primary-color3: #979695;
+    --primary-color4: #25819d;
+    --primary-color5: #fffcfc;
+    --primary-color6: #E7E5E4;
+}
+
+.title-site {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 42px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-style: italic;
+
+}
+
+.title-modal {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.book {
+    margin: 0 auto;
+    background: var(--primary-color5);
+    border: 1px solid var(--primary-color6);
+    box-shadow: 1px 1px 1px var(--primary-color6);
+    border-radius: 10px;
+    text-align: center;
+    width: 20%;
+    padding: 10px;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 800px) {
+    .book {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+    .book {
+        width: 100%;
+    }
+}
+
+.image {
+    margin: 0 auto;
+    width: 80%;
+    align-content: center;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px var(--primary-color6);
+}
+
+.title {
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.year {
+    color: var(--primary-color3);
+    margin-top: 7px;
+}
+
+.authors {
+    margin-top: 7px;
+    color: var(--primary-color4);
+    font-weight: 500;
+}
+
+/* .button-save {
+    margin: 0 auto;
+    align-items: center;
+    width: 15%;
+}
+
+@media (max-width: 600px) {
+    .button-save {
+        width: 80%;
+    }
+} */
+
+.button {
+    width: 100%;
+    background-color: var(--primary-color2);
+    color: var(--primary-color);
+    padding: 8px 8px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+
+.button:focus {
+    background-color: var(--primary-color);
+    color: var(--primary-color5);
+    box-shadow: 1px 1px 2px var(--primary-color6);
+}
+
+.button:visited {
+    background-color: var(--primary-color);
+    color: var(--primary-color5);
+    box-shadow: 1px 1px 2px var(--primary-color6);
+}
+
+.open-modal-button {
+    float: right;
+    margin-top: -90px;
+    margin-bottom: -50px;
+    margin-right: 5%;
+    width: 18%;
+    background-color: var(--primary-color);
+    color: var(--primary-color5);
+    padding: 20px 10px 20px 5px;
+    font-weight: 600;
+    font-size: 22px;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .open-modal-button {
+        margin: 0 auto;
+        display: block;
+        width: 96%;
+        float: none; 
+        padding: 10px 10px;
+        font-weight: 400;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+} 
+
+.open-modal-button:focus {
+    background-color: var(--primary-color2);
+    color: var(--primary-color);
+    box-shadow: 1px 1px 2px var(--primary-color6);
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 400;
+}
+/* .form {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border: none;
+} 
+
+@media (max-width: 800px) {
+    .form {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+} */
+
+.add-modal {
+    background: rgba(1, 1, 1, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-modal-content {
+    width: 30%;
+    opacity: 95%;
+    margin: 0 auto;
+    background-color: var(--primary-color5);
+    border: 1px solid var(--primary-color6);
+    box-shadow: 1px 1px 1px var(--primary-color6);
+    border-radius: 14px;
+    padding: 40px;
+}
+
+@media (max-width: 800px) {
+    .add-modal-content {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px) {
+    .add-modal-content {
+        width: 100%;
+    }
+}
+
+
+input {
+    display: flex;
+    margin: 1em auto;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color6);
+    width: 90%;
+}
+
+input:focus {
+    border: 1px solid #3353d28e;
+}
+
+margin-input {
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
